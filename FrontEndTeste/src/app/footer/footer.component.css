@@ -1,0 +1,143 @@
+.footer{
+  background-color: #011627;
+  border-bottom: 1em solid #2ec4b6;
+  color: #ffffff;
+}
+
+.footer .footer-box{
+  max-width: 960px;
+  min-height: 300px;
+	margin: 0 auto;
+  display: flex;
+  padding: 2em 1em 2em 1em;
+  font-size: 16px;
+  flex-wrap: nowrap;
+
+
+}
+
+.address{
+  flex-grow: 1;
+}
+
+
+.footer-box .address .address-content{
+  display: flex;
+  flex-wrap: nowrap;
+
+  justify-content: space-between;
+}
+
+.footer-box .address .address-title{
+  width: 100%;
+}
+
+.footer-box .address .address-title .address-barra{
+  background-color: #ff9f1c;
+  color: #ff9f1c;
+  width: 75px;
+  height: 7px;
+  margin: 1em 0;
+}
+
+
+.footer-box .address .address-content .address-1:nth-child(1),
+.footer-box .address .address-content .address-2:nth-child(1){
+ /*font-weight: 900;*/
+}
+
+.footer-box .address .address-content .address-1,
+.footer-box .address .address-content .address-2{
+ /* padding-right: 4em;*/
+}
+
+.footer-box .address .address-content .address-1 ul,
+.footer-box .address .address-content .address-2 ul{
+  text-decoration: none;
+}
+
+.footer-box .address .address-content .address-1 ul li,
+.footer-box .address .address-content .address-2 ul li
+{
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  /*font-weight: bold;*/
+}
+
+/*btn*/
+
+.footer-btn{
+  /*
+  display: block;
+  margin: 0 auto;*/
+  padding-top: 3em;
+  flex-grow: 1;
+}
+.footer-btn button{
+  border: none;
+  background-color: #ff9f1c;;
+  color: #000;
+  margin: 2em 2em 0 2em;
+  padding: 0 0 0 2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 3% 2%;
+  width: 270px;
+
+}
+.footer-btn button img{
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  margin-right: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.footer-btn button p{
+ font-weight: bold;
+ font-size: 16px;
+}
+
+/*footer-creators*/
+
+.footer-creators{
+  display: flex;
+  flex-grow: 1;
+  align-content: space-between;
+  width: 15em;
+  align-items: flex-end;
+}
+
+.footer-creators div{
+  /*margin: 1em;*/
+  /*padding: 0 0;*/
+  /*width: 50%;*/
+  flex-grow: 1;
+}
+
+@media (max-width: 860px) {
+
+  .footer .footer-box{
+    flex-wrap: wrap;
+  }
+
+    .footer-box .address .address-content .address-1,
+    .footer-box .address .address-content .address-2{
+      padding-right: 0.5em;
+    }
+
+
+    .footer-btn{
+      padding-top: 1em;
+    }
+
+
+    .footer-btn button{
+      width: 100%;
+      margin: 2em 0 1em 0;
+
+    }
+
+
+}
