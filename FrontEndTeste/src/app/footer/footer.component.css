@@ -19,19 +19,9 @@
 .address{
   flex-grow: 1;
 }
-
-
-.footer-box .address .address-content{
-  display: flex;
-  flex-wrap: nowrap;
-
-  justify-content: space-between;
-}
-
 .footer-box .address .address-title{
   width: 100%;
 }
-
 .footer-box .address .address-title .address-barra{
   background-color: #ff9f1c;
   color: #ff9f1c;
@@ -39,7 +29,12 @@
   height: 7px;
   margin: 1em 0;
 }
+.footer-box .address .address-content{
+  display: flex;
+  flex-wrap: nowrap;
 
+  justify-content: space-between;
+}
 
 .footer-box .address .address-content .address-1:nth-child(1),
 .footer-box .address .address-content .address-2:nth-child(1){

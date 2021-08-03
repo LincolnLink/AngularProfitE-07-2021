@@ -1,0 +1,126 @@
+::scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.productList{
+  padding-top: 1em;
+}
+.productList .productList-box{
+  max-width: 960px;
+  min-height: 300px;
+	margin: 0 auto;
+  padding: 2em 1em 2em 1em;
+  font-size: 16px;  /*
+  display: flex;
+  flex-wrap: nowrap;*/
+}
+.productList-box .productList-title{
+  width: 100%;
+  color: #000;
+  font-weight: bold;
+}
+.productList-box  .productList-title .productList-barra{
+  background-color: #ff9f1c;
+  color: #ff9f1c;
+  width: 75px;
+  height: 7px;
+  margin: 0.5em 0;
+}
+
+.productList-box .list{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+
+}
+
+.productList-box .list .product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*width: 300px;*/
+  min-width: 300px;
+  margin: 0 1em;
+}
+
+section.product:hover{
+  background-color: rgb(249 246 246);
+}
+
+.product-img{
+  display: flex;
+  align-items: center;
+
+}
+.product-description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.product-description .product-title{
+  font-weight: bold;
+  color: #7a7a7a;
+}
+.product-description .product-star{
+
+}
+.product-description .product-oldValue{
+  display: flex;
+  color: #7a7a7a;
+  flex-direction: row;
+  text-decoration: line-through
+}
+.product-description > .product-value{
+  display: flex;
+  color: #2ec4b6;
+  flex-direction: row;
+  font-size: 24px;
+  font-weight: bold;
+}
+.product-description .product-installments{
+  display: flex;
+  color: #7a7a7a;
+  flex-direction: row;
+}
+
+
+.product-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2ec4b6;
+  padding: 0.5em;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.product-btn button{
+ background-color: #2ec4b6;
+ border: none;
+ cursor: pointer;
+}
+.product-btn img{
+  padding-right: 0.5em;
+  height: 25px;
+
+}
+.product-btn p{
+  color: #000;
+  font-weight: bold;
+}
+
+
+
+
+
+@media (max-width: 860px) {
+
+  .productList-box .list{
+  flex-wrap: wrap;
+  }
+
+}

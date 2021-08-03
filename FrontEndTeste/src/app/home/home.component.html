@@ -1,0 +1,47 @@
+
+<app-slide-show></app-slide-show>
+
+<div class="productList">
+  <div class="productList-box">
+
+    <div class="productList-title">
+      <h1>Produtos</h1>
+      <div class="productList-barra"></div>
+    </div>
+
+    <div class="list"  >
+
+        <!--1-->
+        <section class="product" *ngFor="let item of product$ | async">
+          <div class="product-img">
+              <img src="{{item.img}}"  alt="product">
+          </div>
+          <div class="product-description">
+              <div class="product-title">{{item.nome}}</div>
+              <img class="product-star" src="{{item.star}}" alt="">
+              <div class="product-oldValue">
+                <p>de </p>R$ {{item.valueOld}}
+              </div>
+              <div class="product-value">
+                <p>por </p>R$ {{item.value}}
+              </div>
+              <div class="product-installments">
+                <p>ou em 3x de </p> R$ {{item.value / 3 | number:'2.1'}}
+              </div>
+          </div>
+          <div class="product-btn">
+            <button>
+              <img src="../../assets/img/cart-plus-solid.svg" alt="cart">
+            </button>
+            <p>COMPRAR</p>
+
+          </div>
+        </section>
+
+
+
+
+    </div>
+
+  </div>
+</div>

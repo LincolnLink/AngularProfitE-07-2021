@@ -1,0 +1,30 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "nome": "TÊNIS COURO PUMA R698 Q4 V2",
+      "star": "../../assets/img/star-one.png",
+      "valueOld": 399.00,
+      "value": 299.00,
+      "img": "../../assets/img/product1.png"
+    },
+    {
+      "id": 2,
+      "nome": "TÊNIS COURO PUMA R698 Q4 V2",
+      "star": "../../assets/img/star-one.png",
+      "valueOld": 399.00,
+      "value": 299.00,
+      "img": "../../assets/img/product1.png"
+    },
+    {
+      "id": 3,
+      "nome": "TÊNIS COURO PUMA R698 Q4 V2",
+      "star": "../../assets/img/star-one.png",
+      "valueOld": 399.00,
+      "value": 299.00,
+      "img": "../../assets/img/product1.png"
+    }
+
+
+  ]
+}
