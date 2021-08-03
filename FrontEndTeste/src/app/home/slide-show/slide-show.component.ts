@@ -7,7 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlideShowComponent implements OnInit {
 
-  constructor() { }
+  images : Array<any> = []
+
+  constructor() {
+
+    this.images  = [
+      { path: '../../../assets/img/slideshow1.jpg' },
+      { path: '../../../assets/img/slideshow2.jpg' },
+      { path: '../../../assets/img/slideshow3.jpg' },
+      { path: '../../../assets/img/slideshow1.jpg' },
+      { path: '../../../assets/img/slideshow2.jpg' },
+      { path: '../../../assets/img/slideshow3.jpg' },
+
+    ]
+
+  }
 
   ngOnInit(): void {
   }

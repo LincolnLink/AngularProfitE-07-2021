@@ -1,4 +1,48 @@
 
+
+<carousel
+  [images]="images"
+  [height]="400"
+  [cellWidth]="'100%'"
+  [overflowCellsLimit]="1"
+  [loop]="true"
+  [autoplay]="true"
+  [autoplayInterval]="5000"
+  [dots]="true"
+  [counter]="true"
+>
+
+</carousel>
+
+
+
+<!--
 <div class="slide">
   <img src="../../../assets/img/slideshow.jpg" alt="slide">
 </div>
+
+<div id="container">
+  <div ng2-carouselamos class="slides-wrapper"
+    [items]="items"
+    [width]="900"
+    [$prev]="prev"
+    [$next]="next"
+    [$item]="item" >
+  </div>
+
+
+  <ng-template #prev>
+    <img src="../../../assets/img/chevron-left-solid.svg" id="left" />
+  </ng-template>
+  <ng-template #next>
+    <img src="../../../assets/img/chevron-right-solid.svg" id="right" />
+  </ng-template>
+  <ng-template #item let-item let-i="index">
+
+      <div class="items">
+        <img src="{{ item.name }}">
+      </div>
+
+  </ng-template>
+</div>
+-->
